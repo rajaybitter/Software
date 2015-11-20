@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $_SESSION['ID'] = $_GET['ID'];
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,9 +33,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  
   </head>
   <body>
-   
     <div class="header-area">
         <div class="container">
             <div class="row">
@@ -105,7 +110,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.php">Shop page</a></li>
+                        <li><a href="shop.html">Shop page</a></li>
                         <li class="active"><a href="single-product.html">Single product</a></li>
                         <li><a href="cart.html">Cart</a></li>
                         <li><a href="checkout.html">Checkout</a></li>
@@ -144,7 +149,7 @@
                         </form>
                     </div>
                     
-                    <div class="single-sidebar">
+                    <!-- <div class="single-sidebar">
                         <h2 class="sidebar-title">Products</h2>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
@@ -174,9 +179,9 @@
                                 <ins>$700.00</ins> <del>$800.00</del>
                             </div>                             
                         </div>
-                    </div>
+                    </div> -->
                     
-                    <div class="single-sidebar">
+                    <!-- <div class="single-sidebar">
                         <h2 class="sidebar-title">Recent Posts</h2>
                         <ul>
                             <li><a href="">Sony Smart TV - 2015</a></li>
@@ -185,7 +190,7 @@
                             <li><a href="">Sony Smart TV - 2015</a></li>
                             <li><a href="">Sony Smart TV - 2015</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 
                 <div class="col-md-8">
@@ -200,7 +205,7 @@
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="img/product-2.jpg" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     
                                     <div class="product-gallery">
@@ -214,9 +219,9 @@
                             
                             <div class="col-sm-6">
                                 <div class="product-inner">
-                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
+                                    <h2 class="product-name"> </h2>
                                     <div class="product-inner-price">
-                                        <ins>$700.00</ins> <del>$800.00</del>
+                                        <ins></ins>
                                     </div>    
                                     
                                     <form action="" class="cart">
@@ -238,9 +243,9 @@
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
                                                 <h2>Product Description</h2>  
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>
+                                                <p></p>
 
-                                                <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
+                                                
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
                                                 <h2>Reviews</h2>
@@ -270,7 +275,7 @@
                         </div>
                         
                         
-                        <div class="related-products-wrapper">
+                        <!-- <div class="related-products-wrapper">
                             <h2 class="related-products-title">Related Products</h2>
                             <div class="related-products-carousel">
                                 <div class="single-product">
@@ -363,7 +368,7 @@
                                     </div>                            
                                 </div>                                    
                             </div>
-                        </div>
+                        </div> -->
                     </div>                    
                 </div>
             </div>
@@ -464,5 +469,6 @@
     
     <!-- Main Script -->
     <script src="js/main.js"></script>
+    <script src="js/view.js"></script>
   </body>
 </html>

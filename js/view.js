@@ -1,4 +1,4 @@
-$(window).load(
+/*$(window).load(
 	function(){
 		var id = [];
 		var products = $('.single-shop-product');
@@ -19,5 +19,22 @@ $(window).load(
 			})
 			$(this).find('a').attr('href',"view.php?ID="+index);					
 		} )
+	}
+);*/
+
+$(window).load(
+	function(){
+		$.get('shop.php', {func:'getName'},function(data){ 
+				$('.product-name').html(data);
+		})	
+		$.get('shop.php', {func:'getPrice'},function(data){ 
+				$('.product-inner-price').find('ins').html(data);
+		})
+		$.get('shop.php', {func:'getDesc'},function(data){ 
+				$('.tab-pane fade in active').find('p').html(data);
+		})
+		$.get('shop.php', {func:'getImage'},function(data){ 
+				$('.product-main-img').find('img').attr('src', data);
+		})	
 	}
 );

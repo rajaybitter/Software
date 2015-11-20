@@ -1,30 +1,63 @@
 <?php
-	$errmsg_arr = array();
-	$errflag = false;
-	// configuration
-	$dbhost 	= "localhost";
-	$dbname		= "Software";
-	$dbuser		= "root";
-	$dbpass		= "LeeLee431";
+	$user = root;
+	$pass = LeeLee431;
+	session_start();
+
 	try {
 		//create PDO connection
-		$db = new PDO('mysql:host='.$dbhost.';dbname='.$dbname,$dbuser,$dbpass);
+		$db = new PDO( 'mysql:host=localhost;dbname=Software', $user, $pass);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	} catch(PDOException $e){
+	} catch(PDOException $e) {
 		//show error
-	    echo '<p class='bg-danger'>'.$e->getMessage().'</p>';
+	    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
 	    exit;
-	}
-	if($_POST['functionName'] == 'getImage'){
-		getImage($_POST['variable']);
+	}	
+
+	if($_SESSION['ID']){
+		$_GET['ID'] = $_SESSION['ID'];
 	}
 
-	function getImage($id){
-		$id = $db->prepare('SELECT Picture FROM Product WHERE ID=:id');
-		$id->execute(array('ID'=> $id));
-		$row = $id->fetch();
-		echo $row['Picture']; 
-		}
-   	}
+	if ($_GET['func'] == 'getImage'){
+		getImage($_GET['ID'], $db);
+	}elseif ($_GET['func'] == 'getName'){ 
+		getName($_GET['ID'],$db);
+	}elseif ($_GET['func'] == 'getPrice'){
+		getPrice($_GET['ID'],$db);
+	}elseif ($_GET['func'] == 'getDesc'){
+		getDesc($_GET['ID'],$db);
+	}
+	
+   	function getImage($id,$db){
+		$sql = "SELECT * FROM Product WHERE ID=${id}";
+		$query = $db->prepare( $sql );
+		$query->execute();
+		$results = $query->fetchAll( PDO::FETCH_ASSOC );
+		foreach( $results as $row ){}		  
+		echo $row['Picture'];
+	}
+	function getName($id,$db){
+		$sql = "SELECT * FROM Product WHERE ID=${id}";
+		$query = $db->prepare( $sql );
+		$query->execute();
+		$results = $query->fetchAll( PDO::FETCH_ASSOC );
+		foreach( $results as $row ){}		  
+		echo $row['Name'];
+	}
+	function getPrice($id,$db){
+		$sql = "SELECT * FROM Product WHERE ID=${id}";
+		$query = $db->prepare( $sql );
+		$query->execute();
+		$results = $query->fetchAll( PDO::FETCH_ASSOC );
+		foreach( $results as $row ){}		  
+		echo $row['Price'];
+	}
+	function getDesc($id,$db){
+		$sql = "SELECT * FROM Product WHERE ID=${id}";
+		$query = $db->prepare( $sql );
+		$query->execute();
+		$results = $query->fetchAll( PDO::FETCH_ASSOC );
+		foreach( $results as $row ){}		  
+		echo $row['Description'];
+	}
 ?>		   
 			   

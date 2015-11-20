@@ -1,3 +1,14 @@
+<?php   
+include "shop.php";
+$id=1;
+echo $id;   
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -78,7 +89,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="index.html"><span>Electronics</span></a></h1>
+                        <h1><a href="index.html">e<span>Electronics</span></a></h1>
                     </div>
                 </div>
                 
@@ -106,7 +117,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="shop.html">Shop page</a></li>
-                        <li><a href="view.php">Single product</a></li>
+                        <li><a href="single-product.html">Single product</a></li>
                         <li><a href="cart.html">Cart</a></li>
                         <li><a href="checkout.html">Checkout</a></li>
                         <li><a href="#">Category</a></li>
@@ -136,220 +147,184 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">   
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img  alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img  alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product price--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product price--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">    
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product price--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product price--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class = "link" href ="">
-                        <div class="single-shop-product">
-                            <div class="product-upper">
-                                <img src="" alt="">
-                            </div>
-                            <h2><a href=""> <!--Product name--> </a></h2>
-                            <div class="product-carousel-price">
-                                <ins> <!--Product price--> </ins>
-                            </div>  
-                            
-                            <div class="product-option-shop">
-                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                                <p></p>
-                            </div>                       
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="" alt="">
                         </div>
-                    </a>
+                        <h2><a href=""> <!--Product name--> </a></h2>
+                        <div class="product-carousel-price">
+                            <ins> <!--Product price--> </ins>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
                 </div>
             </div>
             
