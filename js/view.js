@@ -31,7 +31,7 @@ $(window).load(
 				$('.product-inner-price').find('ins').html(data);
 		})
 		$.get('shop.php', {func:'getDesc'},function(data){ 
-				$('.tab-pane fade in active').find('p').html(data);
+				$('#home').find('p').html(data);
 		})
 		$.get('shop.php', {func:'getImage'},function(data){ 
 				$('.product-main-img').find('img').attr('src', data);
