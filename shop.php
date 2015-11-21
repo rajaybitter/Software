@@ -1,7 +1,6 @@
 <?php
 	$user = root;
 	$pass = LeeLee431;
-	session_start();
 
 	try {
 		//create PDO connection
@@ -12,10 +11,6 @@
 	    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
 	    exit;
 	}	
-
-	if($_SESSION['ID']){
-		$_GET['ID'] = $_SESSION['ID'];
-	}
 
 	if ($_GET['func'] == 'getImage'){
 		getImage($_GET['ID'], $db);

@@ -24,16 +24,16 @@
 
 $(window).load(
 	function(){
-		$.get('shop.php', {func:'getName'},function(data){ 
+		$.get('shop1.php', {func:'getName'},function(data){ 
 				$('.product-name').html(data);
 		})	
-		$.get('shop.php', {func:'getPrice'},function(data){ 
+		$.get('shop1.php', {func:'getPrice'},function(data){ 
 				$('.product-inner-price').find('ins').html(data);
 		})
-		$.get('shop.php', {func:'getDesc'},function(data){ 
+		$.get('shop1.php', {func:'getDesc'},function(data){ 
 				$('#home').find('p').html(data);
 		})
-		$.get('shop.php', {func:'getImage'},function(data){ 
+		$.get('shop1.php', {func:'getImage'},function(data){ 
 				$('.product-main-img').find('img').attr('src', data);
 		})	
 	}
